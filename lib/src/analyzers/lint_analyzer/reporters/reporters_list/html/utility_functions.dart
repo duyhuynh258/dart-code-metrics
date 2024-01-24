@@ -41,7 +41,7 @@ Element renderSummaryMetric(
       ..classes.add('metrics-total__count')
       ..text = fullValue);
 }
-
+//ignore: long-method
 Element renderTableRecord(ReportTableRecord record) {
   final report = record.report;
   final recordHaveCyclomaticComplexityViolations =

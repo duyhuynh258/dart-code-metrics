@@ -23,7 +23,7 @@ class UtilitySelector {
     Iterable<LintFileReport> records,
   ) =>
       records.map(fileReport).reduce(mergeFileReports);
-
+  //ignore: long-method
   static FileMetricsReport fileReport(LintFileReport record) {
     final functionMetricsReports =
         record.functions.values.map(_functionMetricsReport);
